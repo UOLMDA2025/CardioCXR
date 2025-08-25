@@ -18,6 +18,9 @@ mimic_iv_icu/patients.csv.gz from https://physionet.org/content/mimiciv/3.1/
 
 To process the data run the following command:
 
+Process the data with:
+
+```bash
 python preprocessing.py
 
 # 3. Run Modelling Script
@@ -39,4 +42,4 @@ The repository contains the following key components:
   
 - `stratify.py`  
   Contains functions for stratified subset sampling and multi-label stratification. It is used in the preprocessing pipeline to ensure balanced and representative splits based on combined clinical and demographic labels.
-Note: This file is adapted from the AI4HealthUOL/CardioDiag repository. 
+Note: This file is adapted from the [AI4HealthUOL/CardioDiag](https://github.com/AI4HealthUOL/CardioDiag) repository. 
