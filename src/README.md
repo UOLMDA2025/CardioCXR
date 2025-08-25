@@ -1,7 +1,7 @@
 # CardioCXR
 
----
 This repository contains scripts to process and model ECG data for predictive tasks. Follow the steps below to replicate the experiments.
+
 # 1. Download Required Datasets
 
 Before running the scripts, download the following files and place them in the root directory of this repository:
