@@ -18,8 +18,6 @@ mimic_iv_icu/patients.csv.gz from https://physionet.org/content/mimiciv/3.1/
 
 To process the data run the following command:
 
-Process the data with:
-
 ```bash
 python preprocessing.py
 ```
