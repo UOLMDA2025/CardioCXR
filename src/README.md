@@ -22,13 +22,13 @@ Process the data with:
 
 ```bash
 python preprocessing.py
-
+```
 # 3. Run Modelling Script
 
 To train models run the following command:
-
+```bash
 python train_evaluate.py
-
+```
 # 4. Output and Results
 
 The script will generate performance figures: AURCOC plots, calibration curves and net benefit plots as well as Shapley values, which will be saved automatically in the figures/ directory.
