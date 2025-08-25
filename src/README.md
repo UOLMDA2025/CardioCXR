@@ -29,15 +29,12 @@ python train_evaluate.py
 ```
 # 4. Output and Results
 
-The script will generate performance figures: AURCOC plots, calibration curves and net benefit plots as well as Shapley values, which will be saved automatically in the figures/ directory.
+The script will generate performance figures: AUROC plots, calibration curves and net benefit plots as well as Shapley values, which will be saved automatically in the figures/ directory.
 The repository contains the following key components:
 
-- `preprocessing.py`  
-  Scripts for data cleaning, feature extraction, and preprocessing of ECG-derived features and demographic data as well as stratified spliting across age, gender and target labels and train val test split.
+- `preprocessing.py` – Handles data cleaning, feature extraction, and preprocessing of ECG-derived features and demographic data. Performs stratified splitting across age, gender, and target labels, ensuring train/validation/test sets are balanced and representative.
 
-- `train_evaluate.py`  
-  Scripts to train multilabel classifiers using XGBoost, perform recursive feature elimination for each label, evaluate model performance (AUROC with bootstrapped confidence intervals), and generate interpretation plots using SHAP.
-  
-- `stratify.py`  
-  Contains functions for stratified subset sampling and multi-label stratification. It is used in the preprocessing pipeline to ensure balanced and representative splits based on combined clinical and demographic labels.
+- `train_evaluate.py` – Responsible for model training and evaluation. Trains multilabel classifiers using XGBoost, performs recursive feature elimination for each label, computes performance metrics.
+
+- `stratify.py` – Contains functions for stratified subset sampling and multi-label stratification. Ensures that subsets of the dataset are balanced across combined clinical and demographic labels, supporting consistent and fair training and validation splits.
 Note: This file is adapted from the [AI4HealthUOL/CardioDiag](https://github.com/AI4HealthUOL/CardioDiag) repository. 
