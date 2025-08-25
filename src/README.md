@@ -1,15 +1,4 @@
 # CardioCXR
-This repository contains scripts and resources for preprocessing and modeling ECG data to perform predictive tasks related to cardiopulmonary health from combined ECG and chest X-ray (CXR) data.
-
-## Overview
-
-This project integrates ECG features with chest X-ray labels to build predictive multilabel classification models using XGBoost. The repository provides tools to:
-
-- Clean and preprocess ECG-realted features and CXR data  
-- Engineer relevant ECG features and synchronize them with CXR metadata  
-- Stratify datasets by clinical variables (age, gender, diagnosis labels)  
-- Train and evaluate multilabel classifiers with performance metrics and uncertainty estimates  
-- Interpret model outputs via SHAP values for explainability  
 
 ---
 This repository contains scripts to process and model ECG data for predictive tasks. Follow the steps below to replicate the experiments.
